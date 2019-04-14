@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<script src="sample-registration-form-validation.js"></script>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Username:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" height="80" width="400" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-3.html">Courses Offered </a>
+								<a class="dropdown-item" href="admissions.html">Admissions </a>
+								<a class="dropdown-item" href="syllabus.html">Syllabus </a>
+						</li>
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login/Sign Up</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Programmes of Study<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <p class="lead">The school offers five different programmes of study leading to: Ph.D. in Computer Science, five year Integrated M.Tech. in Computer Science, M.Tech. (Computer Science), M.Tech. (Artificial Intelligence), M.Tech. (Information Technology) with specialization in Banking Technology & Information Security, in collaboration with IDRBT and M.C.A. In addition, the school also contributes and supports the M.Tech. (Computational Techniques) of School of Physics, 5-year Integrated M.A. and M.Sc. courses .</p>
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Ph.D. Programme</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>The candidates admitted to Ph.D. programme in the School will be governed by the following rules:
+
+								<p>All candidates admitted to Ph.D. in the School, whether full time, part time or external, are required to complete the course work.. Initial admission is provisional and subject to candidate passing the course work. In case a candidate is unable to pass the course work within 1 year, his/her admission stands automatically cancelled.</p>
+								</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 5 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 26 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">5- Year Integrated M.Tech Programme</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>The School has introduced a 5-year Integrated M.Tech. programme in Computer Science with effect from the academic year 2014-15. The students will be awarded MTech(CS) degree at the end of five years. It is to be noted that there is no exit option. This programme is intended to provide a high quality computer science education with a curriculum that is state-of-the-art. The School boasts of a very low student-teacher ratio that allows faculty to give individual attention to students.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 5 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 95 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->	
+				
+				<div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Master of Technology in Computer Science</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>M.Tech Computer Science Programme is a four-semester course including two semesters of course work and two semesters of project work. This programme is meant for graduates in engineering disciplines and postgraduates in related sciences and as such it includes both fundamental topics and advanced topics for specialisation </p>
+								<br><br><br>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 2 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 81 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+			
+            <div class="row"> 
+				<div class="col-lg-4 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_4.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Master of Technology in Artificial Intelligence</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>M.Tech Artificial Intelligence is also a four-semester course including two semesters of course work and two semesters of project work. This programme is meant for students already well equipped in computing sciences and as such imparts advanced training in all the major areas of artificial intelligence and other emerging technologies, such as machine learning, data mining, etc.</p>
+								<br><br><br>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 2 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 66 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_5.jpg" alt="" class="img-fluid">
+						</div>		
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Master of Technology in Information Technology</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>M.Tech Information Technology is a four-semester programme including two semesters of course work and two semesters of project work meant for graduates in engineering discipline and postgraduates in related sciences. This unique M.Tech programme in Information Technology with specialization in Banking Technology and Information Security. This programme aims at imparting in-depth knowledge and state-of- art expertise to the students through innovative learning supported by high calibre research and technology leadership to create a pool of responsible and resourceful IT professionals, in particular, for the financial-banking sector.</p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 2 Years</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 37 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_6.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Master of Computer Applications</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>M.C.A. Programme aims to prepare graduates in all the major areas of computer science, relevant aspects of mathematics and management so that they can take up both technical and managerial positions in industry. training is rigorous and involves five semesters of course work and one semester of project work. MCA students of earlier batches have been offered internships at companies such as IBM, GE, Microsoft, CA, CMC, Honeywell etc. and are thus provided an opportunity to learn in industry environment during their last semester. The university has recently been ranked 3rd in universities in India for the MCA programme</p>
+							</div>	
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 3 Years </li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 132 Student</li>
+							</ul>
+						</div>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> School of Computer and Information Sciences (SCIS) offers high quality postgraduate teaching and research in all major areas of Computer and Information Sciences, Artificial Intelligence, and, Banking Technology and Information Security.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">deanscis@uohyd.ac.in</a></li>
+                            <li><a href="#">www.scis.uohyd.ac.in</a></li>
+                            <li>School of CIS<br>
+								University of Hyderabad<br>
+								P.O. Central University<br>
+								Hyderabad - 500 046</li>
+                            <li>+91-040-23134101</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+   
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCKjLTXdq6Db3Xit_pW_GK4EXuPRtnod4o"></script>
+	<!-- Mapsed JavaScript -->
+	<script src="js/mapsed.js"></script>
+	<script src="js/01-custom-places-example.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

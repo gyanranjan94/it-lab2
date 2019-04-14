@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/scis.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
+  <script type='text/javascript' src='js/dynamicpage.js'></script> 
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<script src="sample-registration-form-validation.js"></script>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Username:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" height="80" width="400" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="course-grid-3.html">Courses Offered </a>
+                                <a class="dropdown-item" href="admissions.html">Admissions </a>
+                                <a class="dropdown-item" href="syllabus.html">Syllabus </a>
+                        </li>
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+					
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login/Sign Up</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Admissions<span class="m_1"></span></h1>
+		</div>
+	</div>
+<script type="text/javascript" >
+          (function(){
+             $('a[href="#academics"]').parent().addClass('current');
+              })();
+      </script>
+
+<div id="site_content">
+        
+        <div class="Left_content">
+          <div class="rectangle"><h2>Admission</h2></div>
+             <div class="triangle-l"></div>
+                <div class="triangle-r"></div>
+           <div class="info">
+           <div id ="left_wrap" >
+             <nav>
+                      <ul id ="left_menu"> 
+                         <li><a href="phd.html">Ph.D</a></li>
+                         <li><a href="imtech.html">Integrated M.Tech</a></li>
+                         <li><a href="mtech.html" class="trans_current">M.Tech</a></li>
+                         <li><a href="mca.html">MCA</a></li>
+                        
+                     </ul>
+              </nav>
+            </div>
+            </div>
+       </div><!--About us end-->
+       
+       <div class="Right_content">
+       
+           <div class="info">
+           
+            <div id ="page-wrap">
+            <section id="main-content">
+                <div id="guts">
+        <!--Enter Your Content Here-->
+    <li> <font size="+0.5" color="#F14E23" >Disclaimer:</font> While every attempt is made to keep this page up-to-date, please refer to the latest University prospectus (available at http://acad.uohyd.ac.in) for up-to-date-information. In case of any conflict, the information provided in the prospectus shall be considered as authentic</li>  
+    <li> <font size="+0.5" color="#F14E23" >Note:</font> Foreign nationals are also advised to read section on Admission of Foreign Nationals in the University prospectus</li>   
+<p><font size="+1" color="#808080" >The following is the summary of the criteria for admission into the various programmes:</font></p>
+<ul>
+<li class="sub_section">
+Ph.D. admission is through an entrance exam followed by an interview. Please refer to appropriate section in the University prospectus about UGC Regulations 2016 also<!-- A JRF candidate or a GATE qualified M.Tech. student with 8.5 CPI or equivalent are exempt from the written test and may appear directly for the interview. -->
+ </li>
+ <li class="sub_section">
+The admission to 5-year Integrated M.Tech. in Computer Science will be done through  JEE(Main) examination conducted in 2018 and the counselling for admission will be done by Joint Seat Allocation Authority (JOSAA)/Central Seat Allocation Board (CSAB).
+ </li>
+
+<li class="sub_section"> Admission to M.Tech programmes in Computer Science, Artificial Intelligence and Information Technology courses is through centralized counselling by CCMT (ccmt.nic.in) and is based on valid GATE scores in Computer Science and Information Technology only.</li>
+
+<li class="sub_section">MCA admissions are done based on the scores obtained in NIMCET (National Institute of Technology Master of Computer Applications Common Entrance Test) 2018 only. NIMCET 2018 scores, in order of merit, will be the basis for admission which is done by the counselling at the University of Hyderabad. Interested candidates need to apply to the University of Hyderabad and separately need to provide their NIMCET 2018 scores (when available) as per the information provided by Controller of Examination, University of Hyderabad.</li>
+
+<!--<li class="sub_section"> Foreign student admission to these programmes is based on TOEFL/GRE scores and academic record.</li>-->
+</ul> 
+
+<p align="justify">For further details on the admission to a specific programme and for Foreign Candidates, please refer to the corresponding programme page. For schedule of entrance examination and admission, please refer to latest University Prospectus</p>
+        <p align="justify"><font color="000" size="+1">Fee Structure :</font>
+  
+    <table id="academia" align="center" >
+    <tr class="td_coursetable">
+     
+        
+        <th width="11%"><strong> Course Name</strong></th>
+        <th width="14%"><strong> Admission Fee</strong></th>
+        <th width="18%"> <strong> Fee at the time of Admission</strong></th>
+        <th width="13%"> <strong> Fees per Sem</strong></th>
+        <th width="13%"><strong>Tution Fee</strong></th>
+        <th width="17%"> <strong>Miscellaneous  Fee</strong></th>
+        <th width="17%"><strong> Deposits Refundable</strong></th>
+        <th width="15%"> <strong>Grand Total</strong></th>
+     </tr>
+ 
+    <tr>
+        
+        <td>Ph.D., </td>
+        <td>320</td>
+        <td>330</td>
+        <td>---</td>
+        <td>1090</td>
+        <td>3630</td>
+        <td>1750</td>
+        <td>7120</td>
+     </tr>
+     
+      <tr>
+        
+        <td>5-yr Int. M.Tech(CS)</td>
+        <td>320</td>
+        <td>330+19000</td>
+        <td>---</td>
+        <td>10465</td>
+        <td>5905</td>
+        <td>1750</td>
+        <td>37770</td>
+      </tr>
+     <tr>
+        
+        <td>M.Tech (CS/AI/IT)</td>
+        <td>320</td>
+        <td>330+19000</td>
+        <td>---</td>
+        <td>10465</td>
+        <td>5905</td>
+        <td>1750</td>
+        <td>37770</td>
+      </tr>
+      <tr>
+         
+         <td>M C A </td>
+         <td>320</td>
+         <td>330+19000</td>
+         <td>---</td>
+         <td>10540</td>
+         <td>5685</td>
+         <td>1755</td>
+         <td>37630</td>
+                
+ </table>
+ <p>
+ <font color="#808080"><b>Fee Payable by the Foreign Nationals/ NRI Students :</b></font> 1400$ per semester(Ph.D., M.Tech (CS/AI/IT), MCA & 5-yr Int. M.Tech(CS))<br/></p>
+ 
+ 
+ <p align="justify"><font color="000" size="+1">Mess Deposit to be paid at the time of Hostel Admission:</font></p>
+ <table id="academia" align="center" >
+    <tr class="td_coursetable">
+        <b><th width="412"> Particulars</th>
+        <th width="148"> General Category</th>
+        <th width="144"> SC/ST Sholarship holders</th>
+       </b>
+     </tr>
+     <tr>
+        <td> Mess Deposit for 5-Year Integrated courses </td>
+         <td>5000*</td>
+         <td>1500</td>
+      </tr>
+      <tr>
+        <td> Mess Deposit for all other courses </td>
+         <td>2500</td>
+         <td>1500</td>
+      </tr>
+      <tr>
+      <td> Room Rent (Per Semster)</td>
+      <td> 500  </td>
+      <td> Nil</td>
+      </tr>
+     <tr>
+     <td> Crockery Fees (Per Year) </td>
+     <td>250</td>
+     <td>250</td>
+     </tr>
+     <tr>
+     <td> Hostel Caution Money Deposit (Refundable except service charge 200/-)</td>
+     <td> 600</td>
+     <td> 400</td>
+     </tr>
+     </table>
+     <p><font color="#808080"><b> * To be collected in two installments @ 2500/- at the time of admission and Rs.2500/- at the beginning
+of their 3rd year of study.</b></font><br/></p>
+ 
+                
+           
+        
+         
+        <!--Your ContentEnd  Here-->
+            </div><!-- guts end here-->
+        
+            </section>
+             </div> <!--Page Wrap End HEre-->       
+               </div>
+       </div><!--About us end-->
+
+  
+  </div><!--site Content end-->
+
+	
+
+
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> School of Computer and Information Sciences (SCIS) offers high quality postgraduate teaching and research in all major areas of Computer and Information Sciences, Artificial Intelligence, and, Banking Technology and Information Security.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">deanscis@uohyd.ac.in</a></li>
+                            <li><a href="#">www.scis.uohyd.ac.in</a></li>
+                            <li>School of CIS<br>
+                                University of Hyderabad<br>
+                                P.O. Central University<br>
+                                Hyderabad - 500 046</li>
+                            <li>+91-040-23134101</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+                
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+   
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCKjLTXdq6Db3Xit_pW_GK4EXuPRtnod4o"></script>
+    <!-- Mapsed JavaScript -->
+    <script src="js/mapsed.js"></script>
+    <script src="js/01-custom-places-example.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

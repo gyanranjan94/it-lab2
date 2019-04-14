@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/scis.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<script src="sample-registration-form-validation.js"></script>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Username:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" height="80" width="400" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="course-grid-3.html">Courses Offered </a>
+                                <a class="dropdown-item" href="admissions.html">Admissions </a>
+                                <a class="dropdown-item" href="syllabus.html">Syllabus </a>
+                        </li>
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+					
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login/Sign Up</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>Admissions<span class="m_1"></span></h1>
+		</div>
+	</div>
+
+  <div id="site_content">
+        
+        <div class="Left_content">
+          <div class="rectangle"><h2>Admission</h2></div>
+             <div class="triangle-l"></div>
+                <div class="triangle-r"></div>
+           <div class="info">
+           <div id ="left_wrap" >
+             <nav>
+                      <ul id ="left_menu">
+                          <li><a href="phd.html">Ph.D.</a></li>
+                         <li><a href="imtech.html">Integrated M.Tech.</a></li>
+                         <li><a href="mtech.html" class="trans_current">M.Tech.</a></li>
+                         <li><a href="mca.html">MCA</a></li>
+                     </ul>
+              </nav>
+        </div>
+            </div>
+     </div><!--About us end-->
+       
+       <div class="Right_content">
+       
+           <div class="info">
+           
+            <div id ="page-wrap">
+            <section id="main-content">
+        <div id="guts">
+    <!--Enter Your Content Here-->
+<h2>Master of Technology (M.Tech)</h2>
+    
+<p align="justify"> M.Tech is meant for graduates in engineering disciplines and postgraduates in related sciences. Three different streams of M.Tech. are offered by the school &ndash; M.Tech(CS), M.Tech(AI) and M.Tech(IT) with specialization in Banking Technology and Information Security. Admissions are open for industry sponsored and foreign candidates also. These are supernumerary.
+<br/><br/><font color="000" size="+2">M.Tech. (Computer Science) </font><br/> 
+This programme offers  core courses of  computer science like Operating Systems, Computer Architecture, Algorithms, Software Engineering at an advanced level. Specialized electives of faculty research interest are offered as electives. The course work develops scientific and mathematical approach to computing. Students can also specialize in one of the three streams, namely &quot;High Performance Computing&quot;,&quot;Systems&quot; & &quot;Security&quot; based on courses taken and the dissertation in these areas.<br/><br/><font color="000" size="+2">M.Tech. (Artificial Intelligence) </font><br/>
+This programme is meant for students already well equipped in computing sciences and  imparts advanced training in all the major areas of artificial intelligence and other emerging technologies, such as Knowledge Representation and Reasoning, Human Computer Interaction, Machine Learning, Computational Intelligence etc. 
+<br/><br/><font color="000" size="+2">M.Tech. (Information Technology) </font><br/> 
+This programme offers specialization in Banking Technology and Information Security and aims at imparting in-depth knowledge and state-of- art expertise to the students through innovative learning supported by high calibre research and technology leadership to create a pool of responsible and resourceful IT professionals, in particular, for the banking and finance sector. This course is offered in collaboration with IDRBT, an RBI institute.</p>
+
+<p align="justify">
+<font color="#550000" size="+1">Intake:</font>
+Computer Science : 45+5*<br/> 
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Artificial Intelligence : 30+5*<br/>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Information Technology : 30+5*<br/>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;*&nbsp; Admissions are open for industry sponsored and foreign candidates also. These are all supernumerary seats <br/>
+<br>
+<font color="#550000" size="+1">Minimum Qualifications for Admission:</font>
+With a minimum of 60% marks in the Bachelor's degree examination in
+Engineering/Technology (B.E./B.Tech);
+OR
+in MCA or M.Sc in (Computer Science/Information
+Sciences/Electronics).
+<br>GATE scores in Computer Science and Information Technology and in order of merit, will be the only criteria for admission. (No entrance examination or any interview will be conducted). </br>
+ </p>
+<p><!--<br/><br/>
+<font color="#550000" size="+1">Notification of shortlisted candidates for admission couseling : </font>20.6.2015
+<br/><br/> -->
+  <!--
+<font color="#550000" size="+1">Admission Counseling :</font> 06.7.2015 , 02.00 p.m.  -->
+  <br/>
+  <font color="000" size="+1">Admission Process :</font><br/>
+  <b>General Admission Information for M.Tech. Programmes :</b>Admission to programmes in Computer Science, Artificial Intelligence and Information Technology courses is through centralized counselling by CCMT (ccmt.nic.in) and is based on valid GATE scores in Computer Science and Information Technology only.  Admission and tuition fees for all the three M.Tech. programmes are uniform. 
+  
+  <br/><br/>
+  <font color="000" size="+1">Sponsored candidates :</font><br/>
+  Five sponsored seats are available for admission into each stream of M.Tech CS, AI and IT. Sponsored candidates seeking admission in the M.Tech. (CS/AI/IT)  programmes are exempted from the GATE qualification. Candidates with required basic qualifications would be selected through interviews. Employees with a minimum 2 years of work experience in IT companies registered with STPI or NASSCOM or Central Government Organisations can apply for M.Tech. 
+  admission in CS/AI. For M.Tech (IT) those working in Banks/Financial institutions with a minimum of 3 years work experience will be considered.   A candidate seeking admission in this category into M.Tech. (CS/AI/IT) must submit (along with application) the organization's willingness to pay a sponsorship amount of One Lakh Rupees per candidate (one time) to the development fund of the school.  After admission, candidates are required to pay the sponsorship amount and also the usual tuition, admission  and other fees as prescribed by the University for other students from time to time. 
+  <!--<br/><span><strong>The last date for receipt of applications:  07/04/2014</strong></span><br/>
+  <span><strong>Announcement of results: 26/05/2014.</strong></span><br/> -->
+  
+  <br/><br/>
+  <font color="000" size="+1">Foreign Candidates :</font><br/> 
+  Foreign nationals seeking admission to M.Tech. programmes should have the required qualification with background knowledge in Mathematics, Algorithms, Computer Programming etc. Candidates should have ability to communicate in English and should submit a supportive document with  a good score in TOEFL/IELTS at the time of admission. In addition, students should submit a letter of reference which supports their claims to the background knowledge and ability to communicate in English.Please also read section on Admission onf Foreign Nationals in the Prospectus.</p>
+<p> <!--  <br/><strong>The last date for receipt of applications: 14/04/2014.</strong><br/>-->
+  <!-- <strong>Announcement of results: 26/05/2014</strong>. <br/>-->
+  </p> 
+  <font color="000" size="+1">M.Tech Fellowships/Scholarships: </font> Students admitted into M.Tech CS/AI/IT, will be eligible for AICTE fellowships as and when AICTE processes DBT scheme (No. of fellowships are restricted to AICTE approved intake only).
+</p>
+
+<!-- Your Content ENd  Here-->
+      </div><!-- guts end here-->
+        
+      </section>
+         </div> <!--Page Wrap End HEre-->   
+               </div>
+     </div><!--About us end-->
+
+  
+  </div><!--site Content end-->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> School of Computer and Information Sciences (SCIS) offers high quality postgraduate teaching and research in all major areas of Computer and Information Sciences, Artificial Intelligence, and, Banking Technology and Information Security.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+        <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+        
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">deanscis@uohyd.ac.in</a></li>
+                            <li><a href="#">www.scis.uohyd.ac.in</a></li>
+                            <li>School of CIS<br>
+                University of Hyderabad<br>
+                P.O. Central University<br>
+                Hyderabad - 500 046</li>
+                            <li>+91-040-23134101</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+        
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+   
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCKjLTXdq6Db3Xit_pW_GK4EXuPRtnod4o"></script>
+  <!-- Mapsed JavaScript -->
+  <script src="js/mapsed.js"></script>
+  <script src="js/01-custom-places-example.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
