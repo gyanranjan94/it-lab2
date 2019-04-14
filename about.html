@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<script src="sample-registration-form-validation.js"></script>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="userid">User id:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" name="passid" size="12" /></li>
+<li><label for="username">Username:</label></li>
+<li><input type="text" name="username" size="50" /></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="50" /></li>
+<li><label for="country">Country:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">ZIP Code:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+<li><label>Language:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.jpg" height="80" width="400" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-3.html">Courses Offered </a>
+								<a class="dropdown-item" href="admissions.html">Admissions </a>
+								<a class="dropdown-item" href="syllabus.html">Syllabus </a>
+						</li>
+						
+						<li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+					
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Login/Sign Up</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>About Us<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div class="about_us">
+          <div class="rectangle"><h2></h2></div>
+             <div class="triangle-l"></div>
+                <div class="triangle-r"></div>
+                  <div class="info" style="overflow-y: scroll; max-height:500px;"> 
+                                        
+                   <p>School of Computer and Information Sciences (SCIS) offers high quality postgraduate teaching and research in all major areas of Computer and Information Sciences, Artificial Intelligence, and, Banking Technology and Information Security. Computer Science programme in University of Hyderabad was started in 1983 under the School of Mathematics and Computer/Information Sciences.  Computer and Information Sciences was carved out as a separate Department under the School of Mathematics and Computer/Information Sciences on March 23, 1993. This department became School of Computer and Information Sciences on January 22, 2013.
+                        </p>
+                        <p> SCIS epitomizes excellence in all major functions associated with higher learning such as teaching, research, student development and curriculum planning. The strengths of the School are its quality faculty, innovative and flexible curricula with their unique focus on post-graduate education, state-of-the-art research with a remarkably high number of Ph.D scholars - both ongoing and recently graduated, and highly open and transparent policies that foster a healthy student-faculty interaction. SCIS always stood for innovation and leadership in curriculum planning - having one of the oldest (from 1983) and even now one of the best MCA programmes; boldly proposing and introducing the M. Tech programme in Artificial Intelligence in 1986 to attract the small but growing number of undergraduates in computer science; and, in 2002, introducing the unique M. Tech in Information Technology (with specialization in Banking Technology and Information Security) in collaboration with IDRBT (Institute for Development and Research in Banking Technology, a sister Institute of RBI) aimed at bridging the shortfall of trained computer professionals in banking and finance industries.</p>
+                        <p>With nearly 93% of the faculty possessing a Ph.D and considerable experience in teaching in conjunction with a relatively young average age of around 45 years, the School rightfully boasts of a faculty profile that is young, vibrant and matching the very best in national and international standards. Some of the faculty are Fellows, Senior Members of prestigious international and national professional societies such as IEEE, TAS, APAS and IETE, and are on various Boards of Studies, Governing Boards, Standing Committees and Editorial Board of Journals. The faculty have won many awards and have been invited to reputed international universities and other institutions. It is reflection of SCIS creative atmosphere and academic credentials that it has been able to attract and retain such a faculty. </p>
+   					    <p> The current research areas in the School include Computer Networks and Distributed Processing, Data Base Management Systems, Software Engineering, Computer and Network Security, Mobile Computing, Wireless Sensor Networks, Logic Decision Support Systems, Enterprise Resource Planning, E-Commerce, Geographical Information Systems, Data Warehousing and Data Mining, Bioinformatics, Artificial Intelligence, Machine Learning, Cognition, Natural Language Engineering, Speech Processing, Computer Forensics, Information Security, Image Processing, Heuristics and Meta-heuristics, Cryptology, Pattern Recognition, Vision, Parallel, Grid and Cloud Computing. The School has a very vibrant Ph.D programme with more than 50 registered students as on date and more than 100 scholars have completed their research till now. As the School always has a high priority for research, it strongly encourages fresh and brilliant students to participate in the above exciting research programmes as full-time/part-time Ph.D students. School also offers Visvesvaraya Ph.D Fellowships (sponsored by DeitY) for supporting brilliant Ph.D students. The School is also recognized as an AICTE Minor QIP Centre for Ph.D Programme. </p>
+                        <p> The School maintains active contacts with both industry and research labs, and participates in developing state-of-art computing systems. Department of Science and Technology (DST), Govt. of India has recognized the School's research contribution by funding it under FIST-I programme, UGC under SAP DRS-I, DST-PURSE-I and II etc. The School has signed MoUs with Prof.C.R.Rao AIMSCS Institute, IDRBT, IIIT Hyderabad, ISI Calcutta, Mahasarakham University (Thailand), Universite de Bretagne-Sud (France) to promote research, internship and teaching Programmes. The School also offers elective courses in collaboration with Hitachi Consulting on Service-Oriented Architecture and with IBM ISL on Big Data and Virtualization. The School currently executes several research projects (funded by MIT, UGC, ISRO, DRDO, DLRL, MHA, DST, INCOIS etc.) on FAE, Content-Based Image Retrieval, Wireless Sensor Networks, Speech and Natural Language Processing, Grid Computing, Cryptography, Neural Networks, Formal Methods in Software Engineering, Business Process Re-engineering, Forensic Document Analysis, System Security and Grid Middleware etc. 
+                        </p>
+                        <p> The strength in research drives our curricula which are carefully designed mixes of core courses and electives. The core courses impart a rigorous foundation so that every student is technically competent, while the varied choice of electives allows individuality for students to keep abreast of the latest technological innovations and specialize in their areas of interest. Moreover, students are encouraged by the design of the curriculum itself to select inter-disciplinary courses and gain a broad-based perspective of the field. The curriculum is continually monitored and updated as and when necessary. A major revision, designed and proposed during the last year, has been approved and is intended to handle the greatly increased undergraduates in Computer Science and Information Technology as well as the projected shortfalls in academia and industry. SCIS adopted the Credit and Grading system for evaluation and also has a system for collecting and analyzing student feedback on course structure, content, delivery and evaluation. There is complete transparency in evaluation with the answer scripts discussed with the students to allow them to rectify their mistakes and improve their performance. Students also feel comfortable to discuss any academic or other matters with the faculty.</p>
+                        <p> The teaching methods further reflect our pursuit of excellence. Classrooms are equipped with LCD projectors for courses that benefit from the use of live demonstrations and computer presentations to blackboards for those that require greater flexibility in pace and structure of lecture delivery. Web-based materials and assignments are also used and several classes have been experimentally delivered using locally developed electronic course content and delivery tools. Our laboratories also reflect the unique dichotomy of our curricula with general-purpose ones for core subjects and several specialized ones such as networking lab, speech processing lab, computational intelligence lab, embedded systems lab and software engineering lab for the newest electives. Access to such laboratories is provided to students and faculty on 24/7/365 basis.</p>
+                        <p> Students come through a rigorous admission process and leave with an all-round experience of quality education not bound by the conventions of dated syllabi and evaluation processes that emphasize rote learning. Apart from faculty and research scholars, M.Tech and MCA students also participate in exciting research which sharpens their problem-solving and analytical skills, thus, giving them a competitive edge over their counterparts. In addition, students come from all over the country and the School is beginning to attract the attention of international students. The diversity of the student community and the technical strength of the different programmes are recognized by many distinguished multi-national and other high-end companies that find our students technically superior with excellent problem-solving skills and great cultural awareness.</p>
+                         <p> The unique combination of quality teaching of core concepts and cutting edge electives by excellent faculty, exposure to the latest technologies and research leading to publications in major journals/conferences and accessibility to high-end computing facilities including supercomputers in a completely open informal atmosphere make SCIS a torch-bearer for postgraduate education in computer science in India.</p>
+<!--<a href="Download/Highlights of the School 2015-16.pdf">
+                 		<h4>Highlights of the School for the academic year 2015-16</h4> 
+                 			</a> -->
+                   </div>
+	      </div><!--About us end-->
+
+
+   
+
+     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> School of Computer and Information Sciences (SCIS) offers high quality postgraduate teaching and research in all major areas of Computer and Information Sciences, Artificial Intelligence, and, Banking Technology and Information Security.</p>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">deanscis@uohyd.ac.in</a></li>
+                            <li><a href="#">www.scis.uohyd.ac.in</a></li>
+                            <li>School of CIS<br>
+								University of Hyderabad<br>
+								P.O. Central University<br>
+								Hyderabad - 500 046</li>
+                            <li>+91-040-23134101</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+   
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCKjLTXdq6Db3Xit_pW_GK4EXuPRtnod4o"></script>
+	<!-- Mapsed JavaScript -->
+	<script src="js/mapsed.js"></script>
+	<script src="js/01-custom-places-example.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
